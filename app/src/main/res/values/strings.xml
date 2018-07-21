@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="toolbar_Featured">Featured</string>
+    <string name="toolbar_forum">Forum</string>
+    <string name="toolbar_feedback">Feedback</string>
+</resources>

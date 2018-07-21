@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/margin_medium_2"
+    android:paddingRight="@dimen/margin_medium_2"
+    android:paddingTop="@dimen/margin_medium_2">
+
+    <TextView
+        android:id="@+id/tv_health_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.3"
+        android:text="MM Health"
+        android:textColor="@color/colorText" />
+
+    <ImageView
+        android:id="@+id/iv_health_photo"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/tv_health_heading"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="#00FFFF"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_image_view" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_health_photo"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="@drawable/chip"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_small"
+        android:text="Pretty"
+        android:textSize="@dimen/text_small"
+        android:textAlignment="center"
+        android:textColor="	#00FFFF" />
+
+    <TextView
+        android:id="@+id/tv_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_type"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_toRightOf="@+id/tv_type"
+        android:ellipsize="end"
+        android:textSize="@dimen/text_small"
+        android:lineSpacingMultiplier="1.3"
+        android:maxLines="1"
+        android:padding="@dimen/margin_small"
+        android:text="Jssharma"
+        android:textColor="@color/colorTextSecond" />
+
+    <ImageView
+        android:id="@+id/iv_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_type"
+        android:layout_toStartOf="@+id/tv_dot"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingTop="3dp"
+        android:src="@drawable/ic_adjust_black_24dp" />
+
+    <TextView
+        android:id="@+id/tv_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_type"
+        android:layout_toStartOf="@+id/iv_comment"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingTop="3dp"
+        android:text="134"
+        android:textColor="@color/colorTextSecond"
+        android:textSize="@dimen/text_small" />
+
+    <ImageView
+        android:id="@+id/iv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_type"
+        android:layout_toStartOf="@+id/tv_comment"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingTop="3dp"
+        android:src="@drawable/ic_comment_primary_24dp" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_type"
+        android:layout_toStartOf="@+id/iv_like"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingTop="3dp"
+        android:text="22"
+        android:textColor="@color/colorTextSecond"
+        android:textSize="@dimen/text_small" />
+
+    <ImageView
+        android:id="@+id/iv_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_type"
+        android:layout_toStartOf="@+id/tv_like"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingTop="3dp"
+        android:src="@drawable/ic_thumb_up_gray_24dp" />
+
+    <TextView
+        android:id="@+id/tv_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_type"
+        android:layout_alignEnd="@+id/iv_health_photo"
+        android:paddingLeft="@dimen/margin_small"
+        android:paddingTop="3dp"
+        android:text="56"
+        android:textColor="@color/colorTextSecond"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:textSize="@dimen/text_small" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/tv_type"
+        android:layout_alignRight="@+id/iv_health_photo"
+        android:layout_below="@+id/tv_type"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="#BDBDBD" />
+
+</RelativeLayout>
